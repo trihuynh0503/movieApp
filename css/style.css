@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+body {
+    padding: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    align-items: center;
+    margin: 15px 0 30px 0;
+}
+
+.search-box form {
+    display: flex;
+    max-width: 500px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 450px;
+    padding: 8px;
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.search-box .search-btn {
+    cursor: pointer;
+    width: 120px;
+    background-color: gold;
+    border: none;
+    border-radius: 0 0.4rem 0.4rem 0;
+}
+
+#result {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1310px;
+    gap: 15px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 375px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.card .card-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 10px 5px;
+    background-image: linear-gradient(180deg, rgba(51, 55, 69, 0), rgba(16, 21, 40, 0.95));
+    transition: all 0.5s ease;
+}
+.card .card-content .card-header {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .card-content .card-btn {
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: 1px solid white;
+    padding: 6px 8px;
+}
+
+.card .card-content .info{
+    max-height: 0;
+    opacity: 0;
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    overflow: hidden;
+    transition: all 0.5s ease;
+}    
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .card-content{
+    background-image: linear-gradient(180deg, rgba(51, 55, 69, 0), #101528 48%);
+}
+
+.card:hover .card-content .card-btn {
+    background-color: gold;
+    color: black;
+    border-color: ;
+}
+
+.card:hover .info {
+    max-height: 250px;
+    opacity: 1;
+}
+
+footer {
+    padding: 50px 20px;
+    background-color: gold;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+@media screen and (max-width: 600px){
+    #result {
+        justify-content: center;
+        /* align-items: center; */
+    }
+}

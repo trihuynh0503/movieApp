@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="search-box">
+            <a href="#" onclick="init()">
+                <img src="./assets/movie-reel.png" style="height: 40px" alt="">
+                <h1>Movie Lover</h1></a>
+            <form method="POST" action="/search" id="search-form">
+                <input type="text" id="search-input" placeholder="enter movie name">
+                <button class="search-btn" type="submit" >Search</button>
+            </form>
+        </div>
+    </div>
+    <div id="result">
+    </div>
+
+    <footer>
+        <h3 style="text-decoration: underline;">Attribute</h3>
+        <p>The Icon for this website was provided by: <a href="https://www.flaticon.com/free-icons/movie" title="movie icons">Movie icons created by Freepik - Flaticon</a></p>
+    </footer>
+    <script src="moviesDB.js"></script>
+</body>
+</html>
