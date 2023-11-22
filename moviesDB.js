@@ -81,7 +81,7 @@ async function loadMoreResults(){
 function detectEnd() {
     
     const {scrollTop, clientHeight, scrollHeight} = document.documentElement;
-    if(scrollTop + clientHeight >= scrollHeight) {
+    if(scrollTop + clientHeight >= scrollHeight - 5) {
         console.log("Detect end");
         loadMoreResults();
     }
